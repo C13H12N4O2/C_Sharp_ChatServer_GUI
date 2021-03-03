@@ -77,7 +77,9 @@
             this._gridViewChatHistory.GridControl = this._gridControlChatHistory;
             this._gridViewChatHistory.Name = "_gridViewChatHistory";
             this._gridViewChatHistory.OptionsMenu.EnableColumnMenu = false;
+            this._gridViewChatHistory.OptionsPrint.PrintHeader = false;
             this._gridViewChatHistory.OptionsView.ShowColumnHeaders = false;
+            this._gridViewChatHistory.OptionsView.ShowGroupPanel = false;
             this._gridViewChatHistory.OptionsView.ShowIndicator = false;
             this._gridViewChatHistory.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this._gridViewChatHistory_CustomDrawCell);
             // 
@@ -87,6 +89,7 @@
             this.UID.FieldName = "UID";
             this.UID.Name = "UID";
             this.UID.OptionsColumn.AllowEdit = false;
+            this.UID.OptionsEditForm.UseEditorColRowSpan = false;
             this.UID.Visible = true;
             this.UID.VisibleIndex = 0;
             // 

@@ -71,11 +71,11 @@ namespace ChatClient
         private void _sendData()
         {
             byte[] data = new byte[1024];
-            data = Encoding.Default.GetBytes(_UID);
+            data = _convertByte(_UID);
             _server.Send(data, data.Length);
 
             data = new byte[1024];
-            data = Encoding.Default.GetBytes(_textBoxSend.Text);
+            data = _convertByte(_textBoxSend.Text);
             _server.Send(data, data.Length);
 
             DataRow insertData = _dt.NewRow();
@@ -94,6 +94,11 @@ namespace ChatClient
         private void _gridViewChatHistory_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
         {
             DataRow row = _gridViewChatHistory.GetDataRow(e.RowHandle);
+        }
+
+        private byte[] _convertByte(string str)
+        {
+            return Encoding.Default.GetBytes(str);
         }
     }
 }

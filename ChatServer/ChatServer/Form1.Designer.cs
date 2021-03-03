@@ -70,16 +70,21 @@
             this.Chat});
             this._gridViewChatHistory.GridControl = this._gridControlChatHistory;
             this._gridViewChatHistory.Name = "_gridViewChatHistory";
+            this._gridViewChatHistory.OptionsView.ShowGroupPanel = false;
+            this._gridViewChatHistory.OptionsView.ShowIndicator = false;
             this._gridViewChatHistory.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this._gridViewChatHistory_CustomDrawCell);
             // 
             // UID
             // 
+            this.UID.AppearanceCell.Options.UseTextOptions = true;
+            this.UID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.UID.Caption = "UID";
             this.UID.FieldName = "UID";
             this.UID.Name = "UID";
             this.UID.OptionsColumn.AllowEdit = false;
             this.UID.Visible = true;
             this.UID.VisibleIndex = 0;
+            this.UID.Width = 320;
             // 
             // Chat
             // 
@@ -89,6 +94,7 @@
             this.Chat.OptionsColumn.AllowEdit = false;
             this.Chat.Visible = true;
             this.Chat.VisibleIndex = 1;
+            this.Chat.Width = 638;
             // 
             // Form1
             // 
