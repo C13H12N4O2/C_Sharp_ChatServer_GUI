@@ -1,0 +1,10 @@
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\bin\Debug\ChatServer.exe.config
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\obj\Debug\ChatServer.Form1.resources
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\obj\Debug\ChatServer.Properties.Resources.resources
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.GenerateResource.Cache
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\obj\Debug\ChatServer.exe.licenses
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
+C:\Users\imeco\Desktop\Test\ChatServer\ChatServer\obj\Debug\ChatServer.csprojResolveAssemblyReference.cache
