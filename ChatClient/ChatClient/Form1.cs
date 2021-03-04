@@ -33,8 +33,6 @@ namespace ChatClient
 
         private void _initUID()
         {
-
-            Guid g = Guid.NewGuid();
             _UID = Guid.NewGuid().ToString();
         }
 
@@ -87,7 +85,7 @@ namespace ChatClient
 
         private void _btnSend_Click(object sender, EventArgs e)
         {
-            if (_textBoxSend.Text != "")
+            if (!_isTextEmpty(_textBoxSend.Text))
                 _sendData();
         }
 
@@ -99,6 +97,15 @@ namespace ChatClient
         private byte[] _convertByte(string str)
         {
             return Encoding.Default.GetBytes(str);
+        }
+
+        private bool _isTextEmpty(string text)
+        {
+            if (text == null)
+                return true;
+            else if (text == "")
+                return true;
+            return false;
         }
     }
 }
